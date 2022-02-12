@@ -1,0 +1,392 @@
+/*Author: Pedro Parro*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+section.category {
+    padding: 100px 0;
+    height: 500px;
+    
+}
+section.pages {
+    width: 1200px;
+    max-width: 1200px;
+    padding: 100px 0;
+    height: 900px;
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    display: inline-flex;
+    align-items: center;
+    background-color: rgb(2, 48, 107);
+}
+h2 {
+    width: 1200px;
+    background-color: #fff;
+    font-weight: 700;
+    text-align: left;
+    color: rgb(247, 4, 4);
+    padding-left: 20px;
+}
+/*Navbar*/
+.navbar img {
+    border-radius: 10px;
+    margin-left: 100px;
+}
+.navbar ul {
+    list-style: none;
+    margin-left: 200px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+.navbar ul:hover {
+    background-color: rgb(170, 4, 4);
+    transition: .5s;
+}
+.navbar li a {
+    text-decoration: none;
+    color: rgb(156, 9, 9);
+    font-weight: 500;
+    font-size: 20px;
+}
+.navbar li a:hover {
+    color: #fff;
+    font-weight: 500;
+    transition: .5s;
+}
+/*Input Navbar*/
+.navbar input[type="text"] {
+    width: 350px;
+    height: 35px;
+    outline: 0;
+    border-radius: 3px;
+    border: 0;
+    margin-left: 200px;
+    padding-left: 35px;
+}
+/*Icon*/
+.navbar i {
+    position: absolute;
+    border:none;
+    outline:none;
+    font-size: 25px;
+    top: 28px;
+    left: 375px;
+    color: rgb(245, 7, 7);
+    z-index: 10;
+}
+/*Button Buscar*/
+.btn-search {
+    width: 80px;
+    height: 35px;
+    background-color: rgb(247, 6, 6);
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    outline: 0;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+}
+/*Footer*/
+footer {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    background-color: rgb(2, 48, 107);
+    color: #fff;
+    position: relative;
+    padding: 30px;
+    bottom: 0;
+    left: 0;
+}
+
+/*Page Category*/
+.container   {
+    width: 100%;
+    height: 500px;
+    display: inline-flex;
+    background-color: blue;
+    padding: 70px;
+    position: absolute;
+    padding-left: 5%;
+    margin-top: -100px;
+}
+.container > div {
+    background-color: rgb(170, 4, 4);
+    width: 300px;
+    height: 300px;
+    margin: 5px;
+    align-items: center;
+    display: flex;
+    border-radius: 3px;
+    color: rgb(240, 6, 6);
+    padding-left: 15px;
+}
+.container a {
+    text-decoration: none;
+    color: rgb(247, 182, 6);
+    font-weight: 700;
+}
+.container a:hover {
+    text-decoration: none;
+    color: blue;
+}
+.container > div:hover {
+    background-color: #f6f6f6;
+    color: blue;
+    transition: .5s ease;
+}
+/*End Page Category*/
+
+/*Form - Pages*/
+.container-pages {
+    width: 100%;
+    max-width: 400px;
+	max-height: 750px;
+	position: relative;
+    display: inline-flex;
+    background: #fff;
+	left: 30px;
+	top: 50px;
+    text-align: center;
+    margin-top: -25px;
+    margin-bottom: 40px;
+    border-radius: 3px;
+    flex-basis: 100%;
+    flex-wrap: nowrap;
+}
+.container-pages > div {
+    position: relative;
+    display: inline-block;
+    background: rgb(2, 27, 61);
+    width: 400px;
+    max-width: 400px;
+    max-height: 750px;
+    margin: 0 10px;
+    border-radius: 3px;
+    padding: 10px 10px;
+}
+
+.container-pages textarea {
+    margin: 10px 1%;
+    margin-left: -10px;
+    margin-bottom: -40px;
+    padding: 8px 1%;
+    width: 380px;
+    max-height: 550px;
+    font-size: 15px;
+    outline: 0;
+    border: 0;
+    border-radius: 3px;
+    resize: none;
+    position: relative;
+    display: inline-block;
+    background-color: #fff;
+    color: black;
+}
+
+/*Icon*/
+.container-pages i {
+    font-size: 15px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: rgb(252, 215, 10);
+    display: block;
+}
+/*Icon*/
+.container-pages .fa-edit {
+    font-size: 18px;
+    color: rgb(252, 215, 10);
+    margin: 10px 10px;
+    display: inline-block;
+}
+/*Icon*/
+.container-pages .fa-trash {
+    font-size: 18px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: rgb(252, 215, 10);
+    display: inline-block;
+    margin: 10px 10px;
+}
+/*Btn*/
+.container-pages #btn-edit {
+    background-color: #fff;
+    border-radius: 3px;
+    width: 50px;
+    border: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-pages #btn-trash {
+    background-color: #fff;
+    border-radius: 3px;
+    width: 50px;
+    border: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-pages label {
+    height: 150px;
+    padding-left: 0px;
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 55px;
+}
+.pages h2 {
+    margin-top: -105px;
+}
+.container-pages p {
+    font-size: 13px;
+    word-break: break-all;
+    padding: 5px 5px;
+    overflow: hidden;
+    overflow-y: auto;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 0px;
+}
+.container-pages h3 {
+    font-size: 19px;
+    font-weight: bold;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 5px;
+    max-height: 20px;
+}
+.container-pages h5 {
+    font-size: 15px;
+    max-height: 25px;
+    font-weight: bold;
+    font-weight: 300;
+    color: #fff;
+    max-height: 20px;
+}
+.container-pages a {
+    text-decoration: none;
+    color: rgb(247, 182, 6);
+    font-weight: 700;
+}
+.container-pages a:hover {
+    text-decoration: none;
+    color: blue;
+    transition: .5s ease;
+}
+.container-pages > div:hover {
+    background-color: rgb(236, 2, 2);
+    color: #fff;
+    transition: .5s ease;
+}
+/*End Form - Pages*/
+
+/*Form Index*/
+#section-form {
+    width: 100%;
+    height: 600px;
+    padding: 30px 0;
+    background-color: white;
+  
+}
+#formulario-index {
+    background-color: rgb(160, 5, 5);
+    width: 60%; 
+    margin-left: 20%;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+#form {
+    width: 700px;
+    margin-top: 600px;
+    display: inline-block;
+    background-color: rgb(4, 4, 80);
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 3px;
+}
+.forms {
+    width: 50%;
+    float: left;
+    color: #c0c0c0;
+}
+.forms input {
+    margin: 11px 1%;
+    padding: 8px 1%;
+    width: 98%;
+    outline: 0;
+    border: 0;
+    border-radius: 3px;
+}
+.forms textarea {
+    margin: 11px 1%;
+    padding: 8px 1%;
+    width: 98%;
+    outline: 0;
+    border: 0;
+    border-radius: 3px;
+    resize: none;
+}
+.forms select {
+    background-color: #fff;
+    margin: 10px 1%;
+    padding: 8px 1%;
+    width: 98%;
+    outline: 0;
+    border: 0;
+    border-radius: 3px;
+}
+.forms label {
+    width: 100%;
+    position: relative;
+    display: block;
+    padding-left: 10px;
+}
+#btn {
+    background-color: #fff;
+    margin: 10px 1%;
+    padding: 8px 1%;
+    width: 98%;
+    outline: 0;
+    border: 0;
+    border-radius: 3px;
+    font-weight: 700;
+}
+#btn:hover {
+    background-color: brown;
+    color: #fff;
+    transition: .5s;
+}
+/*End Index*/
+
